@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Sun, Smile, Compass, Moon, Heart, Star } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export default function BirthdayWishesSection() {
   const wishes = [
@@ -16,11 +16,15 @@ export default function BirthdayWishesSection() {
 
   return (
     <section id="birthday-wishes" className="py-28 sm:py-36 px-4 sm:px-6 relative z-10">
-      <div className="max-w-4xl mx-auto space-y-16">
+      
+      {/* Warm Glow */}
+      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-4xl h-[550px] candle-glow blur-[140px] rounded-full pointer-events-none" />
+
+      <div className="max-w-4xl mx-auto space-y-16 relative z-10">
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#110C19]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
             <span>✦</span>
             <span>FOR YOUR NEW YEAR AHEAD</span>
             <span>✦</span>
@@ -30,7 +34,7 @@ export default function BirthdayWishesSection() {
             Your Birthday Wish
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-300 font-light">
+          <p className="text-sm sm:text-base text-[#B8AFC0] font-light">
             Nine blessings I wish for every single day of your upcoming year.
           </p>
         </div>
@@ -40,9 +44,9 @@ export default function BirthdayWishesSection() {
           {wishes.map((item, idx) => (
             <div
               key={idx}
-              className={`birthday-note-tag p-5 sm:p-6 flex items-start gap-4 ${
+              className={`romantic-birthday-note p-5 sm:p-6 flex items-start gap-4 ${
                 item.full ? 'md:col-span-2' : ''
-              } group`}
+              } group cursor-default`}
             >
               <div className="w-8 h-8 rounded-full bg-[#F4D58D]/15 border border-[#F4D58D]/30 flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 group-hover:border-[#F4D58D] transition-transform">
                 <Sparkles className="w-4 h-4 text-[#F4D58D]" />
@@ -51,7 +55,7 @@ export default function BirthdayWishesSection() {
                 <p className="text-base sm:text-lg font-serif-luxury font-medium text-white group-hover:text-[#F4D58D] transition-colors leading-snug">
                   {item.text}
                 </p>
-                <p className="text-xs text-slate-400 font-light">
+                <p className="text-xs text-[#B8AFC0] font-light">
                   {item.sub}
                 </p>
               </div>
@@ -60,7 +64,7 @@ export default function BirthdayWishesSection() {
         </div>
 
         {/* Climax Box */}
-        <div className="luxury-birthday-frame p-8 sm:p-12 text-center max-w-xl mx-auto space-y-3 shadow-2xl">
+        <div className="luxury-stationery-frame p-8 sm:p-12 text-center max-w-xl mx-auto space-y-3 shadow-2xl">
           <p className="text-xl sm:text-2xl md:text-3xl font-serif-luxury italic text-[#F4D58D] font-normal leading-relaxed">
             “That's what I want this year to give you.”
           </p>

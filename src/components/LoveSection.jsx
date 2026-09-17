@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Feather, Sparkles } from 'lucide-react';
+import { Heart, Feather } from 'lucide-react';
 
 export default function LoveSection() {
   return (
@@ -9,17 +9,17 @@ export default function LoveSection() {
         {/* Soft Background Candle Glow */}
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-2xl h-96 candle-glow-strong blur-[140px] rounded-full pointer-events-none" />
 
-        <div className="luxury-birthday-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
+        <div className="luxury-stationery-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
           
           {/* Heart Icon Badge */}
           <div className="flex items-center justify-center gap-2 mb-2">
             <span className="h-[1px] w-8 bg-[#F4D58D]/40" />
-            <Heart className="w-4 h-4 text-[#E8A5B5] fill-[#E8A5B5]/30 animate-pulse" />
+            <Heart className="w-4 h-4 text-[#E8A5B5] fill-[#E8A5B5]/30 animate-pulse stroke-[1.5]" />
             <span className="h-[1px] w-8 bg-[#F4D58D]/40" />
           </div>
 
           <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#110C19]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
               <span>✦</span>
               <span>FROM THE HEART</span>
               <span>✦</span>
@@ -35,13 +35,13 @@ export default function LoveSection() {
           <div className="space-y-6 text-slate-200 font-light text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose text-left sm:text-center max-w-2xl mx-auto">
             
             {/* Glowing Sincere Callout */}
-            <div className="my-6 py-6 px-6 sm:px-8 rounded-2xl bg-[#1A1326]/80 border border-[#E8A5B5]/35 text-center shadow-lg">
+            <div className="my-6 py-6 px-6 sm:px-8 rounded-2xl bg-[#17101F]/85 border border-[#E8A5B5]/35 text-center shadow-lg">
               <p className="text-3xl sm:text-4xl font-serif-luxury font-medium rose-gradient tracking-wide">
                 I still love you.
               </p>
             </div>
 
-            <p className="text-slate-300">
+            <p className="text-[#B8AFC0]">
               No dramatic speech around it.<br />
               No expectation attached to it.<br />
               Just the simple, honest truth.

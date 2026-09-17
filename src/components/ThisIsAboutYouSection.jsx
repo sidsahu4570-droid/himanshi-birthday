@@ -10,10 +10,24 @@ export default function ThisIsAboutYouSection() {
 
       <div className="max-w-3xl mx-auto">
         
-        <div className="luxury-birthday-frame p-8 sm:p-14 md:p-16 relative overflow-hidden text-center space-y-8 shadow-2xl">
+        <div className="luxury-stationery-frame p-8 sm:p-14 md:p-16 relative overflow-hidden text-center space-y-8 shadow-2xl">
           
+          {/* Subtle Corner Decorations */}
+          <div className="absolute top-5 left-5 text-[#F4D58D]/40 text-xs sm:text-sm select-none pointer-events-none">
+            ✦
+          </div>
+          <div className="absolute top-5 right-5 text-[#E8A5B5]/50 text-xs sm:text-sm select-none pointer-events-none">
+            ♡
+          </div>
+          <div className="absolute bottom-5 left-5 text-[#F4D58D]/40 text-xs sm:text-sm select-none pointer-events-none">
+            ✦
+          </div>
+          <div className="absolute bottom-5 right-5 text-[#F4D58D]/40 text-xs sm:text-sm select-none pointer-events-none">
+            ☾
+          </div>
+
           {/* Subtle Top Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D] shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#110C19]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D] shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#F4D58D]" />
             <span>Just For You</span>
           </div>
@@ -32,7 +46,7 @@ export default function ThisIsAboutYouSection() {
           {/* Prose Content */}
           <div className="space-y-6 text-slate-200/95 font-light text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose max-w-2xl mx-auto">
             
-            <p className="text-slate-400">
+            <p className="text-[#B8AFC0]">
               Not the past.<br />
               Not the things that went wrong.<br />
               Not the things that could have been different.

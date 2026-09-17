@@ -1,15 +1,15 @@
 import React from 'react';
-import { Compass, Sparkles, Moon } from 'lucide-react';
+import { Sparkles, Moon } from 'lucide-react';
 
 export default function TheWaitingIdeaSection() {
   return (
     <section id="the-waiting-idea" className="py-28 sm:py-36 px-4 sm:px-6 relative z-10">
       <div className="max-w-3xl mx-auto">
         
-        <div className="luxury-birthday-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
+        <div className="luxury-stationery-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
           
           <div className="flex justify-center mb-2">
-            <div className="w-12 h-12 rounded-2xl bg-[#120D1C] border border-[#F4D58D]/30 flex items-center justify-center text-[#F4D58D] shadow-lg">
+            <div className="w-12 h-12 rounded-2xl bg-[#110C19] border border-[#F4D58D]/30 flex items-center justify-center text-[#F4D58D] shadow-lg">
               <Moon className="w-6 h-6" />
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function TheWaitingIdeaSection() {
 
             <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-[#F4D58D]/40 to-transparent mx-auto my-4" />
 
-            <p className="text-slate-300">
+            <p className="text-[#B8AFC0]">
               And sometimes caring about someone means leaving them completely free to choose their own path.
             </p>
 

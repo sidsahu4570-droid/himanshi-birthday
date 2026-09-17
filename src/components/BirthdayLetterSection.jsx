@@ -8,7 +8,7 @@ export default function BirthdayLetterSection() {
         
         {/* Header */}
         <div className="text-center space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#110C19]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
             <span>✦</span>
             <span>A PERSONAL LETTER</span>
             <span>✦</span>
@@ -20,7 +20,7 @@ export default function BirthdayLetterSection() {
         </div>
 
         {/* Handwritten Style Letter Card */}
-        <div className="luxury-birthday-frame p-8 sm:p-14 md:p-16 border border-[#F4D58D]/35 shadow-2xl relative">
+        <div className="luxury-stationery-frame p-8 sm:p-14 md:p-16 border border-[#F4D58D]/35 shadow-2xl relative">
           
           <div className="flex items-center justify-between mb-8 pb-6 border-b border-white/[0.08]">
             <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#F4D58D]">
@@ -49,7 +49,7 @@ export default function BirthdayLetterSection() {
               I just want you to know that you're still someone I care about deeply. Someone I still love.
             </p>
 
-            <p className="text-slate-300">
+            <p className="text-[#B8AFC0]">
               And I don't need an answer to that. I don't need you to say anything. I don't need you to make any decision.
             </p>
 
@@ -65,11 +65,11 @@ export default function BirthdayLetterSection() {
               <p>I hope this year gives you a version of yourself you're proud of.</p>
             </div>
 
-            <p className="pt-2 text-slate-300">
+            <p className="pt-2 text-[#B8AFC0]">
               And if life takes you somewhere I can't follow, I will still hope that wherever you are, you're happy.
             </p>
 
-            <p className="text-slate-400">
+            <p className="text-[#B8AFC0]">
               That's all.
             </p>
 
@@ -84,10 +84,10 @@ export default function BirthdayLetterSection() {
 
             {/* Signature */}
             <div className="pt-8 border-t border-white/[0.08] flex items-center justify-between">
-              <span className="text-xl sm:text-2xl font-serif-luxury italic text-[#F4D58D] tracking-wider">
+              <span className="text-2xl sm:text-3xl font-script text-[#F4D58D] tracking-wider font-normal">
                 — Siddharth ❤️
               </span>
-              <Heart className="w-5 h-5 text-[#E8A5B5] fill-[#E8A5B5]/30" />
+              <Heart className="w-5 h-5 text-[#E8A5B5] fill-[#E8A5B5]/30 stroke-[1.5]" />
             </div>
 
           </div>

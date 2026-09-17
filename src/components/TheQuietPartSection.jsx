@@ -6,9 +6,9 @@ export default function TheQuietPartSection() {
     <section id="the-quiet-part" className="py-28 sm:py-36 px-4 sm:px-6 relative z-10">
       <div className="max-w-3xl mx-auto">
         
-        <div className="luxury-birthday-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
+        <div className="luxury-stationery-frame p-8 sm:p-14 md:p-16 text-center space-y-8 relative overflow-hidden shadow-2xl">
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#110C19]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
             <span>✦</span>
             <span>A QUIET PROMISE</span>
             <span>✦</span>
@@ -23,19 +23,19 @@ export default function TheQuietPartSection() {
           {/* Sincere Reflections */}
           <div className="space-y-4 text-slate-200 font-light text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose max-w-2xl mx-auto">
             
-            <p className="text-slate-300">I still care about you.</p>
-            <p className="text-slate-300">I still wonder how you're doing.</p>
-            <p className="text-slate-300">I still hope life is being kind to you.</p>
+            <p className="text-[#B8AFC0]">I still care about you.</p>
+            <p className="text-[#B8AFC0]">I still wonder how you're doing.</p>
+            <p className="text-[#B8AFC0]">I still hope life is being kind to you.</p>
             
             <p className="text-xl sm:text-2xl font-serif-luxury italic text-[#F4D58D] font-normal py-2">
               “And yes... I still love you.”
             </p>
 
-            <div className="my-6 p-6 rounded-2xl bg-[#120D1C]/85 border border-[#F4D58D]/20 text-center space-y-3">
+            <div className="my-6 p-6 rounded-2xl bg-[#110C19]/85 border border-[#F4D58D]/20 text-center space-y-3">
               <p className="text-white font-medium text-lg sm:text-xl">
                 But your birthday isn't a place for me to ask for anything.
               </p>
-              <p className="text-slate-300 font-light">
+              <p className="text-[#B8AFC0] font-light">
                 So I won't.
               </p>
               <p className="text-sm sm:text-base text-[#E8A5B5] font-serif-luxury italic pt-1">

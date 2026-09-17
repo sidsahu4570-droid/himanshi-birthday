@@ -16,7 +16,7 @@ export default function HeroIntro({ onScrollDown }) {
             <div className="absolute inset-0 rounded-full bg-white/20 blur-sm pointer-events-none" />
           </div>
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full luxury-birthday-frame border border-[#F4D58D]/30 text-[11px] sm:text-xs font-medium tracking-[0.22em] uppercase text-[#F4D58D] shadow-md">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full luxury-stationery-frame border border-[#F4D58D]/30 text-[11px] sm:text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D] shadow-md">
             <Sparkles className="w-3 h-3 text-[#F4D58D]" />
             <span>A BIRTHDAY GIFT FOR HIMANSHI ❤️</span>
           </div>
@@ -45,11 +45,11 @@ export default function HeroIntro({ onScrollDown }) {
         {/* Scroll Indicator */}
         <div className="pt-4 sm:pt-6 flex flex-col items-center gap-2">
           <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#FFF8EC]/50 font-sans">
-            Scroll gently
+            ✦ Scroll gently ✦
           </p>
           <button
             onClick={onScrollDown}
-            className="p-2.5 sm:p-3 rounded-full luxury-birthday-frame hover:border-[#F4D58D]/60 text-[#F4D58D] hover:text-white transition-all duration-300 animate-bounce cursor-pointer shadow-md"
+            className="p-2.5 sm:p-3 rounded-full luxury-stationery-frame hover:border-[#F4D58D]/60 text-[#F4D58D] hover:text-white transition-all duration-300 animate-bounce cursor-pointer shadow-md"
             aria-label="Scroll to begin experience"
           >
             <ChevronDown className="w-4 h-4 text-[#F4D58D]" />
