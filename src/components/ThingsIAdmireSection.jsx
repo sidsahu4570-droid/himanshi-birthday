@@ -1,106 +1,122 @@
 import React from 'react';
-import { Heart, Sparkles, Star, Feather, Compass, Sun, ShieldCheck } from 'lucide-react';
+import { Heart, Sparkles, Star, Feather, Compass, Flower2, Flame, Gift } from 'lucide-react';
 
 export default function ThingsIAdmireSection() {
   const qualities = [
     {
       title: "THE WAY YOU CARE",
-      icon: <Heart className="w-4 h-4 text-[#E8A5B5]" />,
+      ornament: <Heart className="w-5 h-5 text-[#E9A8B8] stroke-[1.5]" />,
+      rotation: "md:-rotate-[0.9deg]",
       lead: "One thing I've always admired...",
       text: "You have a natural kindness that shows up in the quietest, most sincere ways without ever asking for applause.",
-      tag: "Gentle warmth ✦"
+      signature: "with a little warmth ♡"
     },
     {
       title: "THE WAY YOU MAKE PEOPLE FEEL COMFORTABLE",
-      icon: <Sun className="w-4 h-4 text-[#F4D58D]" />,
+      ornament: <Sparkles className="w-5 h-5 text-[#F5D58A] stroke-[1.5]" />,
+      rotation: "md:rotate-[0.7deg]",
       lead: "One thing I've always noticed...",
       text: "There's an effortless grace about you that makes people feel welcome, accepted, and completely at ease.",
-      tag: "Effortless comfort ♡"
+      signature: "something I admire ✦"
     },
     {
       title: "YOUR QUIET CONFIDENCE",
-      icon: <ShieldCheck className="w-4 h-4 text-[#B9A9D6]" />,
+      ornament: <Star className="w-5 h-5 text-[#B9ACBF] stroke-[1.5]" />,
+      rotation: "md:-rotate-[0.6deg]",
       lead: "One thing I deeply respect...",
       text: "A calm, grounded belief in yourself and your values that doesn't need to be loud to be powerful.",
-      tag: "Inner strength ✦"
+      signature: "written with quiet respect ✧"
     },
     {
       title: "YOUR LITTLE SENSE OF ADVENTURE",
-      icon: <Compass className="w-4 h-4 text-[#F4D58D]" />,
+      ornament: <Compass className="w-5 h-5 text-[#F5D58A] stroke-[1.5]" />,
+      rotation: "md:rotate-[0.8deg]",
       lead: "One thing that always made me smile...",
       text: "That bright spark of curiosity and spontaneous excitement whenever new possibilities open up.",
-      tag: "Adventurous spark ♡"
+      signature: "a spark I remember ♡"
     },
     {
       title: "THE WAY YOU CAN BE BOTH SOFT AND STRONG",
-      icon: <Feather className="w-4 h-4 text-[#E8A5B5]" />,
+      ornament: <Flower2 className="w-5 h-5 text-[#E9A8B8] stroke-[1.5]" />,
+      rotation: "md:-rotate-[0.7deg]",
       lead: "A rare quality in you...",
       text: "A beautiful harmony of genuine tenderness and unwavering resilience through whatever comes your way.",
-      tag: "Rare harmony ✦"
+      signature: "a rare gift ✦"
     },
     {
       title: "THE WAY YOU ARE SIMPLY YOURSELF",
-      icon: <Star className="w-4 h-4 text-[#F4D58D]" />,
+      ornament: <Flame className="w-5 h-5 text-[#F5D58A] stroke-[1.5]" />,
+      rotation: "md:rotate-[0.9deg]",
       lead: "Above everything else...",
       text: "Never wearing a mask, never trying to fit into anyone else's mold—just authentic, genuine, and true.",
-      tag: "Pure authenticity ♡"
+      signature: "just one little thought ♡"
     }
   ];
 
   return (
     <section id="admiration" className="py-28 sm:py-36 px-4 sm:px-6 relative z-10">
-      <div className="max-w-5xl mx-auto space-y-16">
-        
-        {/* Header */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#120D1C]/80 border border-[#F4D58D]/30 text-xs font-medium tracking-[0.25em] uppercase text-[#F4D58D]">
-            <span>✦</span>
-            <span>THINGS I ADMIRE ABOUT YOU</span>
-            <span>✦</span>
-          </div>
+      
+      {/* Warm Candlelight Ambient Background Glow */}
+      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-4xl h-[600px] candle-glow-strong blur-[140px] rounded-full pointer-events-none" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury font-medium text-white tracking-tight">
+      <div className="max-w-5xl mx-auto space-y-14 sm:space-y-18 relative z-10">
+        
+        {/* Section Heading Area */}
+        <div className="text-center space-y-3.5 max-w-2xl mx-auto">
+          <p className="text-xs sm:text-[13px] font-sans font-medium tracking-[0.28em] uppercase text-[#F5D58A]/90">
+            ✦ a few little thoughts for you ✦
+          </p>
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury font-medium text-[#FFF8ED] tracking-tight">
             Little Notes on Who You Are
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-300 font-light max-w-md mx-auto">
-            Not memories of the past—just genuine reflections of the qualities that make you uniquely special.
+          <p className="font-script text-xl sm:text-2xl text-[#E9A8B8] pt-1 font-normal tracking-wide">
+            “because some things are worth saying”
           </p>
         </div>
 
-        {/* 6 Luxury Birthday Note Tags Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        {/* 6 Luxury Romantic Birthday Keepsake Notes (3x2 Desktop Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {qualities.map((item, idx) => (
             <div
               key={idx}
-              className="birthday-note-tag p-6 sm:p-7 flex flex-col justify-between group cursor-default"
+              className={`romantic-birthday-note p-7 sm:p-8 flex flex-col justify-between group cursor-default transition-all duration-500 ease-out hover:-translate-y-1.5 hover:md:rotate-0 ${item.rotation}`}
             >
-              <div>
-                {/* Header Row: Seal & Title */}
+              {/* Internal Candlelight Radial Illumination */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(245,213,138,0.08),transparent_65%)] pointer-events-none" />
+
+              <div className="relative z-10">
+                {/* Note Top: Title & Delicate Stationery Ornament */}
                 <div className="flex items-center justify-between mb-5">
-                  <span className="text-[11px] font-sans font-semibold tracking-[2.5px] uppercase text-[#F4D58D]">
-                    {item.title}
+                  <span className="text-xs font-sans font-medium tracking-[2.5px] uppercase text-[#F5D58A] flex items-center gap-1.5">
+                    <span className="text-[#E9A8B8] text-[10px]">✦</span>
+                    <span>{item.title}</span>
                   </span>
-                  <div className="note-ribbon-seal">
-                    {item.icon}
+
+                  <div className="stationery-ornament">
+                    {item.ornament}
                   </div>
                 </div>
 
-                <p className="text-xs text-[#FFF8EC]/60 font-light mb-2">
+                {/* Introductory Lead */}
+                <p className="text-xs sm:text-[13px] font-serif-luxury italic text-[#E9A8B8]/85 font-light mb-2.5">
                   {item.lead}
                 </p>
 
-                <p className="text-sm sm:text-base text-slate-200 font-light leading-relaxed">
+                {/* Main Sincere Statement */}
+                <p className="text-base sm:text-[17px] font-serif-luxury text-[#FFF8ED] font-normal leading-relaxed">
                   {item.text}
                 </p>
               </div>
 
-              {/* Tag Footer */}
-              <div className="pt-5 mt-5 border-t border-white/[0.08] flex items-center justify-between text-xs">
-                <span className="font-serif-luxury italic text-[#E8A5B5] tracking-wide">
-                  {item.tag}
+              {/* Note Footer: Handwritten Signature & Delicate Sparkle */}
+              <div className="relative z-10 pt-6 mt-6 border-t border-white/[0.08] flex items-center justify-between">
+                <span className="font-script text-lg sm:text-xl text-[#F5D58A] tracking-wide font-normal">
+                  {item.signature}
                 </span>
-                <Sparkles className="w-3.5 h-3.5 text-[#F4D58D] opacity-60 group-hover:opacity-100 group-hover:rotate-45 transition-all" />
+
+                <Sparkles className="w-3.5 h-3.5 text-[#F5D58A] opacity-50 group-hover:opacity-100 group-hover:rotate-45 group-hover:scale-110 transition-all duration-300" />
               </div>
             </div>
           ))}
