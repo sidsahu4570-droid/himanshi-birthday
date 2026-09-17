@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-midnight: #070812;
+    --bg-plum: #120D1C;
+    --bg-card: #1A1326;
+    --gold: #F4D58D;
+    --ivory: #FFF8EC;
+    --blush: #E8A5B5;
+    --rose: #C98296;
+    --lavender: #B9A9D6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #070812;
+    color: #FFF8EC;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #070812;
+    color: #FFF8EC;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Luxury Typography */
+.font-serif-luxury {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive, serif;
+}
+
+/* Romantic Birthday Frame */
+.luxury-birthday-frame {
+  background: radial-gradient(circle at 50% 0%, rgba(38, 26, 54, 0.55) 0%, rgba(18, 13, 28, 0.8) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(244, 213, 141, 0.2);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 45px rgba(244, 213, 141, 0.06), inset 0 1px 0 rgba(255, 248, 236, 0.15);
+  border-radius: 32px;
+}
+
+/* Luxury Birthday Note Tag Card */
+.birthday-note-tag {
+  background: radial-gradient(circle at 30% 20%, rgba(42, 28, 60, 0.5) 0%, rgba(20, 14, 32, 0.75) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(244, 213, 141, 0.2);
+  border-radius: 26px;
+  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(232, 165, 181, 0.04), inset 0 1px 0 rgba(255, 248, 236, 0.14);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.birthday-note-tag:hover {
+  transform: translateY(-5px);
+  border-color: rgba(244, 213, 141, 0.5);
+  box-shadow: 0 28px 60px -10px rgba(0, 0, 0, 0.8), 0 0 40px rgba(244, 213, 141, 0.18), 0 0 20px rgba(232, 165, 181, 0.15), inset 0 1px 0 rgba(255, 248, 236, 0.28);
+  background: radial-gradient(circle at 30% 20%, rgba(55, 36, 78, 0.6) 0%, rgba(26, 18, 42, 0.85) 100%);
+}
+
+.note-ribbon-seal {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(244, 213, 141, 0.3) 0%, rgba(232, 165, 181, 0.15) 60%, rgba(26, 19, 38, 0.5) 100%);
+  border: 1px solid rgba(244, 213, 141, 0.35);
+  box-shadow: 0 0 15px rgba(244, 213, 141, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.birthday-note-tag:hover .note-ribbon-seal {
+  transform: scale(1.1) rotate(8deg);
+  border-color: rgba(244, 213, 141, 0.7);
+  box-shadow: 0 0 25px rgba(244, 213, 141, 0.35);
+}
+
+/* Color Gradients */
+.gold-gradient {
+  background: linear-gradient(135deg, #FFF8EC 0%, #F4D58D 55%, #E8A5B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rose-gradient {
+  background: linear-gradient(135deg, #FFF8EC 0%, #E8A5B5 50%, #C98296 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.champagne-gradient {
+  background: linear-gradient(135deg, #FFF8EC 0%, #F4D58D 70%, #E8A5B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Warm Candle Glow */
+.candle-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(244, 213, 141, 0.15) 0%, rgba(232, 165, 181, 0.08) 45%, transparent 70%);
+}
+
+.candle-glow-strong {
+  background: radial-gradient(circle at 50% 50%, rgba(244, 213, 141, 0.22) 0%, rgba(201, 130, 150, 0.1) 50%, transparent 75%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #070812;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 213, 141, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 165, 181, 0.5);
+}
